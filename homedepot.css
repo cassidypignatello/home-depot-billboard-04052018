@@ -1,5 +1,6 @@
 .container {
   width: 970px;
   height: 250px;
-  border: 1px solid black;
+  background: url(background.png) no-repeat;
+  cursor: pointer;
 }
