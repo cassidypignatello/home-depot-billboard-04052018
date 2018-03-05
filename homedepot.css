@@ -4,3 +4,21 @@
   background: url(background.png) no-repeat;
   cursor: pointer;
 }
+
+.arrow-left {
+  position: absolute;
+  top: 118px;
+  left: 231px;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 118px;
+  left: 726px;
+}
+
+.slides {
+  position: absolute;
+  top: 18px;
+  left: 260px;
+}
