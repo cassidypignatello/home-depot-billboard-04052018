@@ -13,16 +13,16 @@ html {
 
 #arrow-left {
   position: absolute;
-  display: inline-block;
   top: 118px;
   left: 231px;
+  cursor: pointer;
 }
 
 #arrow-right {
   position: absolute;
-  display: inline-block;
   top: 118px;
   left: 726px;
+  cursor: pointer;
 }
 
 .slides {
@@ -30,4 +30,5 @@ html {
   display: none;
   top: 10px;
   left: 260px;
+  cursor: pointer;
 }

@@ -1,12 +1,12 @@
 var background = document.getElementsByClassName('container');
-var slideIndex = 1;
+var slideIndex = 2;
 var slides = document.getElementsByClassName('slides');
 
 function init() {
   handleArrows();
   showSlides(slideIndex);
   background[0].addEventListener('click', function() {
-    ADTECH.click('Banner', 'http://www.homedepot.com');
+    ADTECH.click('Main Background', 'http://www.homedepot.com');
   });
 }
 
@@ -14,16 +14,21 @@ function handleClick() {
   if (slideIndex === 1) {
     slides[slideIndex - 1].addEventListener('click', function(e) {
       e.stopPropagation();
-      ADTECH.click(
-        '35 Percent Off',
-        'https://www.homedepot.com/b/Appliances/Samsung/N-5yc1vZbv1wZa0f'
-      );
+      ADTECH.click('Nobody Banner', 'http://www.homedepot.com');
     });
   } else if (slideIndex === 2) {
     slides[slideIndex - 1].addEventListener('click', function(e) {
       e.stopPropagation();
       ADTECH.click(
-        'Spring',
+        '35 Percent Off Banner',
+        'https://www.homedepot.com/b/Appliances/Samsung/N-5yc1vZbv1wZa0f'
+      );
+    });
+  } else if (slideIndex === 3) {
+    slides[slideIndex - 1].addEventListener('click', function(e) {
+      e.stopPropagation();
+      ADTECH.click(
+        'Spring Banner',
         'https://www.homedepot.com/b/Featured-Products-Appliances-Samsung-Spring-for-Something-New/N-5yc1vZcjlt'
       );
     });
