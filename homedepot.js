@@ -1,13 +1,13 @@
 var background = document.getElementsByClassName('container');
-var slideIndex = 2;
 var slides = document.getElementsByClassName('slides');
+var slideIndex = 2;
 
 function init() {
   handleArrows();
   showSlides(slideIndex);
-  background[0].addEventListener('click', function() {
+  background[0].onclick = function() {
     ADTECH.click('Main Background', 'http://www.homedepot.com');
-  });
+  };
 }
 
 function handleClick() {
