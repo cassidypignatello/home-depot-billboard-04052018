@@ -12,26 +12,26 @@ function init() {
 
 function handleClick() {
   if (slideIndex === 1) {
-    slides[slideIndex - 1].addEventListener('click', function(e) {
+    slides[slideIndex - 1].onclick = function(e) {
       e.stopPropagation();
       ADTECH.click('Nobody Banner', 'http://www.homedepot.com');
-    });
+    };
   } else if (slideIndex === 2) {
-    slides[slideIndex - 1].addEventListener('click', function(e) {
+    slides[slideIndex - 1].onclick = function(e) {
       e.stopPropagation();
       ADTECH.click(
         '35 Percent Off Banner',
         'https://www.homedepot.com/b/Appliances/Samsung/N-5yc1vZbv1wZa0f'
       );
-    });
+    };
   } else if (slideIndex === 3) {
-    slides[slideIndex - 1].addEventListener('click', function(e) {
+    slides[slideIndex - 1].onclick = function(e) {
       e.stopPropagation();
       ADTECH.click(
         'Spring Banner',
         'https://www.homedepot.com/b/Featured-Products-Appliances-Samsung-Spring-for-Something-New/N-5yc1vZcjlt'
       );
-    });
+    };
   }
 }
 
